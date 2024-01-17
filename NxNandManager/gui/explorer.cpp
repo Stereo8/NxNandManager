@@ -1245,8 +1245,8 @@ QString Explorer::explicitOutputPathForNxFile(NxFile* file)
     {
         path.append(QString::fromStdString(file->titleIDString()));
 
-        if (file->hasAdditionalString("title_name"))
-            path.append(" " + QString::fromStdString(file->normalizedTitleLabel()));
+        // if (file->hasAdditionalString("title_name"))
+        //    path.append(" " + QString::fromStdString(file->normalizedTitleLabel()));
 
         path.append("/");
     }
